@@ -85,27 +85,27 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-// var testArray = [2, 3, 4]; //eslint-disable-line
-// function sumArray(sumArr) { //eslint-disable-line
-//   var sentence = "";
-//   var sum = 0;
-//   var sum2Arr = [];
-//   var numberString ="";
-//   for( var i = 0; i < sumArr.length; i++) {
-//     sum = sum + sumArr[i];
-//     console.log(sum)
-//     if(sumArr[i] === sumArr[sumArr.length-1]) {
-//     numberString = numberString + sumArr[i].toString();
-//   }else{ numberString = numberString + sumArr[i].toString() + ","}
-//   }
-//   sentence = " was passed in as an array of numbers, and " + sum + " is their sum.";
-//   sentence = numberString + sentence;
-//   console.log(sentence);
-//   sum2Arr.push(sum);
-//   sum2Arr.push(sentence);
-//   console.log(sum2Arr)
-//   return sum2Arr;
-// }
+var testArray = [2, 3, 4]; //eslint-disable-line
+function sumArray(sumArr) { //eslint-disable-line
+  var sentence = "";
+  var sum = 0;
+  var sum2Arr = [];
+  var numberString ="";
+  for( var i = 0; i < sumArr.length; i++) {
+    sum = sum + sumArr[i];
+    console.log(sum)
+    if(sumArr[i] === sumArr[sumArr.length-1]) {
+    numberString = numberString + sumArr[i].toString();
+  }else{ numberString = numberString + sumArr[i].toString() + ","}
+  }
+  sentence = " was passed in as an array of numbers, and " + sum + " is their sum.";
+  sentence = numberString + sentence;
+  console.log(sentence);
+  sum2Arr.push(sum);
+  sum2Arr.push(sentence);
+  console.log(sum2Arr)
+  return sum2Arr;
+}
 
 // sumArray(testArray);
 // // Here is the test for sumArray(); uncomment it to run it
@@ -126,11 +126,28 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+var sentence2 = "";
+var mult = 0;
+var mult2Arr;
+var numberString2 = "";
+for( var i = 0; i < multArr.length; i++) {
+  mult = mult * sumArr[i];
+  console.log(mult)
+  if(multArr[i] === multArr[multArr.length-1]) {
+  numberString = numberString2 + multArr[i].toString();
+}else{ numberString = numberString + sumArr[i].toString() + ","}
+}
+sentence2 = "The numbers " + numberString2 + "have a product of " + mult ;
+sentence2 =  sentence2;
+console.log(sentence2);
+sum2Arr.push(mult);
+sum2Arr.push(sentence2);
+console.log(mult2Arr)
+return mult2Arr;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+ testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
